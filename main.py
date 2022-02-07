@@ -79,7 +79,7 @@ def main():
         choice = input(f"> ")
         print()
         if choice == "0":
-            print("Thank you for using the program! Game on!")
+            print("Thank you for using the program! Have fun!")
         if choice == "1":
             add_show(db)
         # elif choice == "2":
