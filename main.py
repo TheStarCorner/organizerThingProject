@@ -43,6 +43,16 @@ def add_show(db):
     }
     db.collection("shows").document(nameOfShow).set(showData)
 
+
+# def add_manga(db):
+#     nameOfManga = input("Please enter the name of the manga: ")
+#     mangaChapters = input("How many chapters")
+#     mangaFinished = input("Have you finished the manga (y/n)?: ")
+#     mangaScore = input("What would you rate the manga on a scale from 1-10?: ")
+
+
+
+
 def checkShowList(db):
     print("Select Query")
     print("1.) List one show")
@@ -71,11 +81,33 @@ def main():
     choice = None
     while choice != "0":
         print()
+        print("Organizer Thing List")
+        print("----------------")
+        print("TV Shows")
+        print()
         print("0) Exit")
+
         print("1) Add New Game")
+
         print("2) Check Game Info")
+
         print("3) Delete a game from the database")
+
         print("4) Edit Game Information (Hours Played, Score)")
+
+        print("----------------")
+
+        print("Manga")
+        print()
+        print("5) Add a New Manga")
+
+        print("6) Check Manga Info")
+
+        print("7) Delete a Manga from the database")
+
+        print("8) Edit Manga Information (Hours Played, Score)")
+        
+        print()
         choice = input(f"> ")
         print()
         if choice == "0":
